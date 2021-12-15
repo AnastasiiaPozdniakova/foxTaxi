@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS payment (
 CREATE TABLE IF NOT EXISTS ride(
     id SERIAL PRIMARY KEY,
 	 beginning_checkpoint_id int NOT NULL REFERENCES checkpoint(id),
-	 destinantion_checkpoint_id int NOT NULL REFERENCES checkpoint(id), 
+	 destination_checkpoint_id int NOT NULL REFERENCES checkpoint(id), 
 	 payment_id int NULL REFERENCES payment(id),
 	 driver_user_info_id int NOT NULL REFERENCES driver(user_info_id)
 );
