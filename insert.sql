@@ -27,3 +27,11 @@ VALUES (1, 2, null, 1 );
 
 INSERT INTO ride_details (checkpoint_id_1, checkpoint_id_2, checkpoint_id_3)
 VALUES (3, null, null);
+INSERT INTO payment_type(name)
+VALUES ('cash');
+
+INSERT INTO payment_type(name)
+VALUES ('card');
+
+INSERT INTO payment_type(name)
+VALUES ('bonus');
