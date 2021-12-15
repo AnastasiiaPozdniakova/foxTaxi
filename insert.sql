@@ -35,3 +35,17 @@ VALUES ('card');
 
 INSERT INTO payment_type(name)
 VALUES ('bonus');
+
+
+INSERT INTO payment(total_amount, payment_info_card_id,payment_info_cash_id, payment_info_bonus_id)
+VALUES (200.50, NULL, NULL, NULL);
+
+INSERT INTO payment_info (amount, payment_type_id)
+VALUES (100, 1);
+
+INSERT INTO payment_info (amount, payment_type_id)
+VALUES (90, 2);
+
+INSERT INTO payment_info (amount, payment_type_id)
+VALUES (10.50, 3);
+
