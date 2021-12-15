@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS checkpoint (
 
 CREATE TABLE IF NOT EXISTS payment (
    id SERIAL PRIMARY KEY,
-	totla_amount numeric,
+	total_amount numeric,
 	payment_info_card_id int NULL REFERENCES payment_info(id),
 	payment_info_cash_id int NULL REFERENCES payment_info(id),
 	payment_info_bonus_id int NULL REFERENCES payment_info(id)
