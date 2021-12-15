@@ -73,7 +73,7 @@ CREATE TABLE ride_details(
 	checkpoint_id_1 int NULL REFERENCES checkpoint,
 	checkpoint_id_2 int NULL REFERENCES checkpoint,
 	checkpoint_id_3 int NULL REFERENCES checkpoint,
-	ride_id int NULL REFERENCES ride(id)
+	ride_id int NOT NULL REFERENCES ride(id)
 );
 
 
