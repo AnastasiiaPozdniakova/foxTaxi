@@ -49,3 +49,20 @@ VALUES (90, 2);
 INSERT INTO payment_info (amount, payment_type_id)
 VALUES (10.50, 3);
 
+
+UPDATE payment
+SET payment_info_card_id = 2
+WHERE id = 1;
+
+UPDATE payment
+SET payment_info_cash_id = 1
+WHERE id = 1;
+
+UPDATE payment
+SET payment_info_bonus_id = 3
+WHERE id = 1;
+
+UPDATE ride
+SET payment_id = 1
+WHERE id =3
+
