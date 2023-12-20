@@ -6,6 +6,7 @@ use FoxTaxi;
 CREATE TABLE IF NOT EXISTS user_info(
 id SERIAL  PRIMARY KEY,
 Name varchar (50),
+Age int CHECK(Age >= 18),
 Surname varchar (50),
 Telephone NUMERIC,
 google_id varchar (50),
